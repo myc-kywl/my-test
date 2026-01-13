@@ -1,10 +1,10 @@
 ```mermaid
 flowchart TD
-    A[t-1: 状态 x<br/>（用 locker）]
-    B[t-1: 状态 1-x<br/>（不用 locker）]
+    A["t-1: 状态 x<br/>（用 locker）"]
+    B["t-1: 状态 1-x<br/>（不用 locker）"]
 
-    A -->|1-δ| C[t: 2 + z x]
-    A -->|δ| D[t: 1 − (2 + z x)]
+    A -->|1-δ| C["t: 2 + z·x"]
+    A -->|δ| D["t: 1 - (2 + z·x)"]
 
     B -->|δ| C
     B -->|1-δ| D
@@ -20,3 +20,4 @@ flowchart TD
 
     F --> I[对称结果]
     I --> J[1 − (2·(zⁿ⁺¹ − 1)/(z − 1) + zⁿ⁺¹ x)]
+
