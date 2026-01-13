@@ -1,7 +1,8 @@
 ```mermaid
 flowchart TD
-    A["t-1: 状态 x<br/>（用 locker）"]
-    B["t-1: 状态 1-x<br/>（不用 locker）"]
+    A["t-1: x<br/>（用 locker）<br/>衰减系数 δ"]
+    B["t-1: 1-x<br/>（不用 locker）<br/>衰减系数 α"]
+    I["z = 1 - α - δ"]
 
     A -->|1-δ| C["t: α + z·x"]
     A -->|δ| D["t: 1 - (α + z·x)"]
@@ -20,5 +21,6 @@ flowchart TD
 
     F -->|α| G
     F -->|1-α| H
+
 
 
