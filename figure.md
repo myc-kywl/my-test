@@ -10,7 +10,7 @@ flowchart TD
     A -->|剩余市场份额| E["(1-α)x<br/>HD用户"]
     A -->|用户流失| F["αx+β(1-x)<br/>Locker用户"]
 
-    B -->|进入Locker| F
+    B -->|广告/口碑进入Locker| F
     B -->|剩余市场份额| G["(1-β)(1-x)<br/>非HD/Locker用户"]
 
     D -->F
@@ -22,8 +22,9 @@ flowchart TD
     F -->|剩余市场份额| K
     F -->|用户流失| L["[(1-β)^2](1-x)+δ[αx+β(1-x)]<br/>非HD/Locker用户"]
 
-    G-->|进入Locker| K
+    G-->|广告/口碑进入Locker| K
     G -->|剩余市场份额| L
+
 
 
 
