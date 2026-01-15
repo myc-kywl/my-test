@@ -5,7 +5,7 @@ flowchart TD
     D["0（Locker用户）<br/>用户衰减参数δ"]
     B["1-x（非HD/Locker用户）<br/>用户衰减参数β"]
 
-    H["t"]
+    C-->H["t"]
 
     A -->|剩余市场份额| E["(1-α)x<br/>HD用户"]
     A -->|用户流失| F["αx+β(1-x)<br/>Locker用户"]
@@ -15,7 +15,7 @@ flowchart TD
 
     D -->F
 
-    I["t+1"]
+    H -->I["t+1"]
     E -->|剩余市场份额| J["[(1-α)^2]x<br/>HD用户"]
     E -->|用户流失| K["α(1-α)x+(1-δ)[αx+β(1-x)]+β(1-β)(1-x)<br/>Locker用户"]
 
@@ -24,6 +24,7 @@ flowchart TD
 
     G-->|进入Locker| K
     G -->|剩余市场份额| L
+
 
 
 
